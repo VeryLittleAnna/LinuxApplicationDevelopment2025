@@ -98,6 +98,7 @@ int main(int argc, char *argv[]){
     int c = 0;
 
     line_cnt = display_first_page(win, file, height, width, buffer);
+    keypad(win, TRUE);
     while((c = wgetch(win)) != 27) {
         if (c == 32) {
             update(win, file, width, buffer);
