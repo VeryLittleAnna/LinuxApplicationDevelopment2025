@@ -33,10 +33,7 @@ README: prog
 :	./$< 2> $@
 
 clean:
-:	rm -f $(TRASH)
-
-distclean: clean
-:	rm -rf $(GENERATES)
+:	rm -f $(TRASH) $(GENERATES)
 
 test: prog prog-a prog-so
 :	./prog > outfile0 2>&1
