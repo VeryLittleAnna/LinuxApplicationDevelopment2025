@@ -1,0 +1,57 @@
+# Russian translations for binsearch package.
+# Copyright (C) 2025 THE binsearch'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the binsearch package.
+# Anna Grinenko <very.little.anna@gmail.com>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: binsearch 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-11-18 01:04+0300\n"
+"PO-Revision-Date: 2025-11-17 22:00+0300\n"
+"Last-Translator: Anna Verylittle <very.little.anna@gmail.com>\n"
+"Language-Team: Russian <gnu@d07.ru>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: src/binsearch.c:33
+#, c-format
+msgid "Error reading input\n"
+msgstr "Ошибка чтения\n"
+
+#: src/binsearch.c:31
+#, c-format
+msgid "Error: standard input closed\n"
+msgstr "Ошибка: стандартный ввод закрыт\n"
+
+#: src/binsearch.c:42
+#, c-format
+msgid "Incorrect answer. Two possible answers: Yes or No\n"
+msgstr "Некорректный ответ. Два возможных ответа: Да или Нет\n"
+
+#: src/binsearch.c:28
+#, c-format
+msgid "Is the number greater than %d?\n"
+msgstr "Ваше число больше чем %d?\n"
+
+#: src/binsearch.c:22
+msgid "No"
+msgstr "Нет"
+
+#: src/binsearch.c:19
+#, c-format
+msgid "Think of a number between 1 and 100\n"
+msgstr "Задумайте число от 1 до 100\n"
+
+#: src/binsearch.c:21
+msgid "Yes"
+msgstr "Да"
+
+#: src/binsearch.c:45
+#, c-format
+msgid "Your number is %d!\n"
+msgstr "Ваше число - %d!\n"
