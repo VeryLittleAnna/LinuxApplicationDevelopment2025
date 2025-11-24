@@ -1,0 +1,30 @@
+--- v3.c	2025-11-24 23:35:56.348374458 +0300
++++ v4.c	2025-11-24 23:32:24.782470715 +0300
+@@ -49,18 +49,19 @@
+ }
+ 
+ int main(int argc, char *argv[]) {
+-    srand(time(NULL));
+     
+     size = 6;
+-
+-    if (argc < 3) {
+-        printf("Usage: %s <path><wall> <size>\n", argv[0]);
++    
++    if (argc < 4) {
++        printf("Usage: %s <seed> <path><wall> <size>\n", argv[0]);
+         return 1;
+     }
+-    size = atoi(argv[2]);
+-    if (size <= 0 || strlen(argv[1]) != 2) return 1;
+-    char path = argv[1][0];
+-    char wall = argv[1][1];
++    unsigned int seed = atoi(argv[1]);
++    srand(seed);
++    size = atoi(argv[3]);
++    if (size <= 0 || strlen(argv[2]) != 2) return 1;
++    char path = argv[2][0];
++    char wall = argv[2][1];
+     
+     int startX = rand() % size;
+     int startY = rand() % size;

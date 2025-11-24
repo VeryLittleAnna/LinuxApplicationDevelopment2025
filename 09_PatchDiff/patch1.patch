@@ -1,0 +1,29 @@
+--- main.c	2025-11-24 23:20:40.196862395 +0300
++++ v2.c	2025-11-24 23:21:21.434835159 +0300
+@@ -1,6 +1,7 @@
+ #include <stdio.h>
+ #include <stdlib.h>
+ #include <time.h>
++#include <string.h>
+ 
+ int size;
+ int** visited;
+@@ -47,10 +48,17 @@
+     }
+ }
+ 
+-int main() {
++int main(int argc, char *argv[]) {
+     srand(time(NULL));
+     
+     size = 6;
++
++    if (argc < 2) {
++        printf("Usage: %s <size>\n", argv[0]);
++        return 1;
++    }
++    size = atoi(argv[1]);
++    if (size <= 0) return 1;
+     
+     int startX = rand() % size;
+     int startY = rand() % size;

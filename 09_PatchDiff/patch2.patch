@@ -1,0 +1,45 @@
+--- v2.c	2025-11-24 23:21:21.434835159 +0300
++++ v3.c	2025-11-24 23:35:56.348374458 +0300
+@@ -37,12 +37,12 @@
+     }
+ }
+ 
+-void print_maze() {
++void print_maze(char path, char wall) {
+     int grid_size = 2 * size + 1;
+     
+     for (int i = 0; i < grid_size; i++) {
+         for (int j = 0; j < grid_size; j++) {
+-            printf("%c", grid[i][j] ? '.' : '#');
++            printf("%c", grid[i][j] ? path : wall);
+         }
+         printf("\n");
+     }
+@@ -53,12 +53,14 @@
+     
+     size = 6;
+ 
+-    if (argc < 2) {
+-        printf("Usage: %s <size>\n", argv[0]);
++    if (argc < 3) {
++        printf("Usage: %s <path><wall> <size>\n", argv[0]);
+         return 1;
+     }
+-    size = atoi(argv[1]);
+-    if (size <= 0) return 1;
++    size = atoi(argv[2]);
++    if (size <= 0 || strlen(argv[1]) != 2) return 1;
++    char path = argv[1][0];
++    char wall = argv[1][1];
+     
+     int startX = rand() % size;
+     int startY = rand() % size;
+@@ -80,7 +82,7 @@
+ 
+     dfs(startX, startY);
+     
+-    print_maze();
++    print_maze(path, wall);
+     
+     for (int i = 0; i < size; i++) {
+         free(visited[i]);
