@@ -1,0 +1,13 @@
+build/
+build-*/
+binsearch
+*.o
+*.mo
+*.pot
+locale/
+*~
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+.vscode/

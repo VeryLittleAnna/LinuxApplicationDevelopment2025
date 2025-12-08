@@ -1,0 +1,145 @@
+# Russian translations for binsearch package.
+# Copyright (C) 2025 THE binsearch'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the binsearch package.
+# Anna Grinenko <very.little.anna@gmail.com>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: binsearch 1.0\n"
+"Domain: binsearch\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-09 00:08+0300\n"
+"PO-Revision-Date: 2025-11-17 22:00+0300\n"
+"Last-Translator: Anna Verylittle <very.little.anna@gmail.com>\n"
+"Language-Team: Russian <gnu@d07.ru>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+#: /home/anna/Desktop/MSU/5/Uneex_Linux/LinuxApplicationDevelopment2025/11_Documenting/src/binsearch.c:97
+#, c-format
+msgid "Usage: binsearch [OPTIONS]\n"
+msgstr "Использование: binsearch [ОПЦИИ]\n"
+
+#: /home/anna/Desktop/MSU/5/Uneex_Linux/LinuxApplicationDevelopment2025/11_Documenting/src/binsearch.c:98
+#, c-format
+msgid ""
+"Number guessing game using binary search algorithm\n"
+"\n"
+msgstr ""
+"Игра с угадыванием числа с помощью алгоритма бинарного поиска\n"
+"\n"
+
+#: /home/anna/Desktop/MSU/5/Uneex_Linux/LinuxApplicationDevelopment2025/11_Documenting/src/binsearch.c:99
+#, c-format
+msgid "Options:\n"
+msgstr "Опции:\n"
+
+#: /home/anna/Desktop/MSU/5/Uneex_Linux/LinuxApplicationDevelopment2025/11_Documenting/src/binsearch.c:100
+#, c-format
+msgid "  -r, --roman        Use Roman numerals instead of Arabic\n"
+msgstr "  -r, --roman        Использовать римские цифры вместо арабских\n"
+
+#: /home/anna/Desktop/MSU/5/Uneex_Linux/LinuxApplicationDevelopment2025/11_Documenting/src/binsearch.c:101
+#, c-format
+msgid "  -h, --help         Display this help message\n"
+msgstr "  -h, --help         Отобразить это сообщение справки\n"
+
+#: /home/anna/Desktop/MSU/5/Uneex_Linux/LinuxApplicationDevelopment2025/11_Documenting/src/binsearch.c:102
+#, c-format
+msgid "Description:\n"
+msgstr "Описание:\n"
+
+#: /home/anna/Desktop/MSU/5/Uneex_Linux/LinuxApplicationDevelopment2025/11_Documenting/src/binsearch.c:103
+#, c-format
+msgid ""
+"  The program guesses a number between 1 (I) and %d (%s) that you think of. "
+"It uses binary search algorithm.\n"
+msgstr ""
+"  Программа угадывает число от 1 (I) до %d (%s), которое вы задумали. "
+"Использует алгоритм двоичного поиска.\n"
+
+#: /home/anna/Desktop/MSU/5/Uneex_Linux/LinuxApplicationDevelopment2025/11_Documenting/src/binsearch.c:104
+#, c-format
+msgid ""
+"  Answer with 'Yes' or 'No' to the questions asked by the program.\n"
+"\n"
+msgstr ""
+"  Отвечай на вопросы программы с помощью 'Дa' или 'Нет'\n"
+"\n"
+
+#: /home/anna/Desktop/MSU/5/Uneex_Linux/LinuxApplicationDevelopment2025/11_Documenting/src/binsearch.c:105
+#, c-format
+msgid "Examples:\n"
+msgstr "Примеры:\n"
+
+#: /home/anna/Desktop/MSU/5/Uneex_Linux/LinuxApplicationDevelopment2025/11_Documenting/src/binsearch.c:106
+#, c-format
+msgid "  binsearch           Run with Arabic numerals (default)\n"
+msgstr "  binsearch           Запуск с арабскими цифрами (по умолчанию)\n"
+
+#: /home/anna/Desktop/MSU/5/Uneex_Linux/LinuxApplicationDevelopment2025/11_Documenting/src/binsearch.c:107
+#, c-format
+msgid "  binsearch -r        Run with Roman numerals\n"
+msgstr "  binsearch -r        Запуск с римскими цифрами\n"
+
+#: /home/anna/Desktop/MSU/5/Uneex_Linux/LinuxApplicationDevelopment2025/11_Documenting/src/binsearch.c:133
+#, c-format
+msgid "Try '%s --help' for more information.\n"
+msgstr "Попробуй '%s --help' для дополнительной информации.\n"
+
+#: /home/anna/Desktop/MSU/5/Uneex_Linux/LinuxApplicationDevelopment2025/11_Documenting/src/binsearch.c:143
+#, c-format
+msgid "Think of a number between I and %s\n"
+msgstr "Задумайте число от 1 до %s\n"
+
+#: /home/anna/Desktop/MSU/5/Uneex_Linux/LinuxApplicationDevelopment2025/11_Documenting/src/binsearch.c:145
+#, c-format
+msgid "Think of a number between 1 and %d\n"
+msgstr "Задумайте число от 1 до %d\n"
+
+#: /home/anna/Desktop/MSU/5/Uneex_Linux/LinuxApplicationDevelopment2025/11_Documenting/src/binsearch.c:148
+msgid "Yes"
+msgstr "Да"
+
+#: /home/anna/Desktop/MSU/5/Uneex_Linux/LinuxApplicationDevelopment2025/11_Documenting/src/binsearch.c:149
+msgid "No"
+msgstr "Нет"
+
+#: /home/anna/Desktop/MSU/5/Uneex_Linux/LinuxApplicationDevelopment2025/11_Documenting/src/binsearch.c:159
+#, c-format
+msgid "Is the number greater than %s?\n"
+msgstr "Ваше число больше чем %s?\n"
+
+#: /home/anna/Desktop/MSU/5/Uneex_Linux/LinuxApplicationDevelopment2025/11_Documenting/src/binsearch.c:161
+#, c-format
+msgid "Is the number greater than %d?\n"
+msgstr "Ваше число больше чем %d?\n"
+
+#: /home/anna/Desktop/MSU/5/Uneex_Linux/LinuxApplicationDevelopment2025/11_Documenting/src/binsearch.c:165
+#, c-format
+msgid "Error: standard input closed\n"
+msgstr "Ошибка: стандартный ввод закрыт\n"
+
+#: /home/anna/Desktop/MSU/5/Uneex_Linux/LinuxApplicationDevelopment2025/11_Documenting/src/binsearch.c:167
+#, c-format
+msgid "Error reading input\n"
+msgstr "Ошибка чтения\n"
+
+#: /home/anna/Desktop/MSU/5/Uneex_Linux/LinuxApplicationDevelopment2025/11_Documenting/src/binsearch.c:176
+#, c-format
+msgid "Incorrect answer. Two possible answers: Yes or No\n"
+msgstr "Некорректный ответ. Два возможных ответа: Да или Нет\n"
+
+#: /home/anna/Desktop/MSU/5/Uneex_Linux/LinuxApplicationDevelopment2025/11_Documenting/src/binsearch.c:182
+#, c-format
+msgid "Your number is %s!\n"
+msgstr "Ваше число - %s!\n"
+
+#: /home/anna/Desktop/MSU/5/Uneex_Linux/LinuxApplicationDevelopment2025/11_Documenting/src/binsearch.c:184
+#, c-format
+msgid "Your number is %d!\n"
+msgstr "Ваше число - %d!\n"

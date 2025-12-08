@@ -1,0 +1,28 @@
+.TH BINSEARCH 1 "@PROJECT_VERSION@" "binsearch manual"
+.SH NAME
+binsearch \- Number guessing game using binary search algorithm
+.SH SYNOPSIS
+.B binsearch
+[\fI-r\fR|\fI--roman\fR]
+[\fI-h\fR|\fI--help\fR]
+.SH DESCRIPTION
+The program guesses a number between 1 (I) and 3999 (MMMCMXCIX) that you think of. It uses binary search algorithm.
+Answer with 'Yes' or 'No' to the questions asked by the program.
+.SH OPTIONS
+.TP
+.BR \-r ", " \-\-roman
+Use Roman numerals instead of Arabic
+.TP
+.BR \-h ", " \-\-help
+Display help message
+.SH EXAMPLES
+.TP
+.B binsearch
+Run with Arabic numerals (default)
+.TP
+.B binsearch \-r
+Run with Roman numerals
+.SH AUTHOR
+Anna Grinenko <very.little.anna@gmail.com>
+.SH SEE ALSO
+gettext(1), locale(1)
