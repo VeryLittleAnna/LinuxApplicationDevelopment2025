@@ -1,0 +1,10 @@
+PROJECT_NAME           = "Guess Number Game"
+PROJECT_BRIEF          = "Number guessing game with both Arabic and Roman numerals"
+OUTPUT_DIRECTORY       = "@DOXYGEN_OUTPUT_DIR@"
+INPUT                  = "@CMAKE_SOURCE_DIR@/src"
+RECURSIVE              = YES
+EXTRACT_ALL            = YES
+GENERATE_HTML          = YES
+GENERATE_MAN           = YES
+MAN_EXTENSION          = .1
+GENERATE_LATEX         = NO
