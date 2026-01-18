@@ -10,7 +10,6 @@ install_manifest.txt
 *.so
 *.a
 bin/
-lib/
 
 po/*.po~
 
