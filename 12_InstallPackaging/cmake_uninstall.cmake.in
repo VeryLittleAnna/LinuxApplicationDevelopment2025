@@ -1,0 +1,16 @@
+if(NOT EXISTS "@CMAKE_CURRENT_BINARY_DIR@/install_manifest.txt")
+    message(FATAL_ERROR "Install manifest not found: @CMAKE_CURRENT_BINARY_DIR@/install_manifest.txt")
+endif()
+
+file(READ "@CMAKE_CURRENT_BINARY_DIR@/install_manifest.txt" files)
+string(REGEX REPLACE "\n" ";" files "${files}")
+
+foreach(file ${files})
+    message(STATUS "Removing: $ENV{DESTDIR}${file}")
+    if(EXISTS "$ENV{DESTDIR}${file}")
+        file(REMOVE "$ENV{DESTDIR}${file}")
+        message(STATUS "OK")
+    else()
+        message(STATUS "File not found (already removed?)")
+    endif()
+endforeach(file)
